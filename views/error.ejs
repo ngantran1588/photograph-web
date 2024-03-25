@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Error page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <div>
+        <h1 class="title has-text-centered">Error Page</h1>
+        <% if (error) { %>
+            <p class="has-text-centered"><strong>Error:</strong> <%= error %></p>
+        <% } %>
+        <p class="has-text-centered">Sorry, something went wrong. Please try again later.</p>
+    </div>
+</body>
+</html>
